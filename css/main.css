@@ -1,0 +1,111 @@
+/*Ajustes globales*/
+*{
+    margin: 0;
+    padding: 4;
+    box-sizing: border-box;
+}
+
+
+/*------------CABECERA--------------*/
+
+#cabecera{
+    width: 100vw;
+
+}
+
+#fotoCabecera{
+    width: 100%;
+    object-fit: fill;
+    
+}
+
+
+
+
+/*-------------GALERIA--------------*/
+
+#galeria{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: aliceblue;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}
+
+
+#contenedorTit{
+    display: grid;
+    width: 100%;
+    height: 40px;
+    border: 3px, solid, rgb(25, 155, 31);
+    
+}
+
+#contenedorGal{
+    position: relative;
+    display: grid;
+    width: 100%;
+    border: 3px, solid, rgb(58, 119, 173);
+    
+    
+}
+#tarjeta1{
+    border: 3px solid orange;
+    height: 100px;
+    align-items: center;
+}
+
+
+/*------------FOOTER------------------*/
+#pie{
+    display: grid;
+    background-color: coral;
+    background-color: brown;
+
+
+}
+
+
+
+
+
+
+
+/*=================768px==============*/
+
+@media screen and (min-width: 768px) {
+    .contenedorGal {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    }
+}
+
+
+
+
+/*===============992px===============*/
+
+
+@media screen and (min-width: 992px){
+    .contenedorGal{
+    grid-template-columns: 2fr;
+    column-gap: 10px;
+    row-gap: 15px;
+    }
+}
+
+
+
+/*===============1200px===============*/
+
+@media screen and (min-width: 1220px){
+    .contenedorGal{
+    grid-template-columns: 3fr;
+    column-gap: 10px;
+    row-gap: 15px;
+    }
+}
+    
